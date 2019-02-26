@@ -48,26 +48,3 @@ def reverse2(b):
 print(reverse2(b))
 
 f = txt.split(" ")
-
-"""
-def reverse(txt):
-    print(txt[::-1])
-
-words = txt.split(" ")
-
-def reverse2(words):
-    words = words[-1::-1]
-    text = ' '.join(words)
-print(reverse2(words))
-    
-def reverse3(words):
-    str = txt.split(" ")
-    nw = [w[::-1] for w in str]
-    nt = ' '.join(nw)
-    print(nt)
-
-reverse(txt)
-reverse2(words)
-reverse3(words)
-
-"""
