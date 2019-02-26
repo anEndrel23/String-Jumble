@@ -35,16 +35,39 @@ def reverse(txt):
   return str
 print(reverse(txt))
 
-words = txt.split(" ")
+b = txt.split(" ")
 
-print(reverse(words))
+print(reverse(b))
 
-def reverse2(words):
+def reverse2(b):
     vga = ""
-    for j in words:
+    for j in b:
         vga = j + vga
     agv = " ".join(vga)
     return vga
+print(reverse2(b))
+
+f = txt.split(" ")
+
+"""
+def reverse(txt):
+    print(txt[::-1])
+
+words = txt.split(" ")
+
+def reverse2(words):
+    words = words[-1::-1]
+    text = ' '.join(words)
 print(reverse2(words))
     
-  
+def reverse3(words):
+    str = txt.split(" ")
+    nw = [w[::-1] for w in str]
+    nt = ' '.join(nw)
+    print(nt)
+
+reverse(txt)
+reverse2(words)
+reverse3(words)
+
+"""
