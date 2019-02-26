@@ -28,23 +28,23 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 txt = str(input("Please enter a string of text (the bigger the better): "))
 print('You entered "'+txt+'". Now jumble it:')
 
-def reverse(txt):
-    print(txt[::-1])
+def reverse(txt): 
+  str = "" 
+  for i in txt: 
+    str = i + str
+  return str
+print(reverse(txt))
 
-def rco(txt):
-    words = txt.split(" ")
-    words = words[-1::-1]
-    text = ' '.join(words)
-    print(txt)
-    
-def cor(txt):
-    sent = txt.split(" ")
-    nw = [w[::-1] for w in sent]
-    nt = ' '.join(nw)
-    print(nt)
+words = txt.split(" ")
 
-reverse(txt)
-rco(txt)
-cor(txt)
+print(reverse(words))
+
+def reverse2(words):
+    vga = ""
+    for j in words:
+        vga = j + vga
+    agv = " ".join(vga)
+    return vga
+print(reverse2(words))
     
   
