@@ -28,6 +28,20 @@ erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 txt = str(input("Please enter a string of text (the bigger the better): "))
 print('You entered "'+txt+'". Now jumble it:')
 
+print(txt[::-1])
+
+words = txt.split(" ")
+spl = words[::-1]
+for i in spl:
+    bw = " ".join(spl)
+print(bw)
+    
+for j in words:
+    bl = (j[::-1] for j in words)
+    fbl = " ".join(bl)
+print(fbl)
+
+"""
 def reverse(txt): 
   str = "" 
   for i in txt: 
@@ -37,14 +51,15 @@ print(reverse(txt))
 
 b = txt.split(" ")
 
-print(reverse(b))
-
 def reverse2(b):
     vga = ""
     for j in b:
         vga = j + vga
-    agv = " ".join(vga)
-    return vga
+    agv = "".join(vga)
+    return agv
 print(reverse2(b))
 
 f = txt.split(" ")
+"""
+
+
