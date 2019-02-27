@@ -40,26 +40,3 @@ for j in words:
     bl = (j[::-1] for j in words)
     fbl = " ".join(bl)
 print(fbl)
-
-"""
-def reverse(txt): 
-  str = "" 
-  for i in txt: 
-    str = i + str
-  return str
-print(reverse(txt))
-
-b = txt.split(" ")
-
-def reverse2(b):
-    vga = ""
-    for j in b:
-        vga = j + vga
-    agv = "".join(vga)
-    return agv
-print(reverse2(b))
-
-f = txt.split(" ")
-"""
-
-
